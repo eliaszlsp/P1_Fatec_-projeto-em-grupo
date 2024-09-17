@@ -4,10 +4,37 @@
   padding: 0;
 }
 
+/* Estilizando barras de rolagem no Chrome, Edge e Safari
+Atualmente, a estilização de barras de rolagem para o Chrome, Edge e o Safari está disponível com o pseudoelemento do prefixo de fabricante -webkit-scrollbar. */
+
+body::-webkit-scrollbar {
+  width: 7px;
+  height: 7px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(255, 166, 0, 0); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #075440; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  border: 1px solid rgba(64, 190, 25, 0); /* creates padding around scroll thumb */
+}
+
 body {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+a:hover {
+  opacity: 60%;
 }
 
 #logo {
@@ -18,7 +45,7 @@ body {
 .secao {
   width: 1200px;
   height: 400px;
-  background-color: green;
+  background-color: #075440;
 }
 .navelogo {
   display: flex;
@@ -47,10 +74,51 @@ header {
   width: 100vw;
 }
 
-.lista {
+.listadanav {
   display: flex;
   gap: 80px;
   margin-right: 100px;
   flex-direction: row;
   list-style: none;
+}
+#iconeMenuHamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0px 20px;
+  }
+  #logo {
+    margin-left: 50px;
+  }
+
+  .secao {
+    width: 100%;
+    height: 300px;
+    background-color: #075440;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .listadanav {
+    display: none;
+  }
+  #iconeMenuHamburger {
+    display: block;
+    margin-right: 50px;
+    background-color: transparent;
+    width: 45px;
+  }
+  button {
+    outline: none;
+    border: none;
+  }
 }
