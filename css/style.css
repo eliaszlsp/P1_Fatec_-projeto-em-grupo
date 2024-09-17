@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 100px;
+}
+.secao {
+  width: 1200px;
+  height: 400px;
+  background-color: green;
+}
+.navelogo {
+  display: flex;
+  width: 1200px;
+  flex-direction: row;
+  height: 100px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px black;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 1200px;
+  margin-top: 20px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+}
+
+.lista {
+  display: flex;
+  gap: 80px;
+  margin-right: 100px;
+  flex-direction: row;
+  list-style: none;
+}
