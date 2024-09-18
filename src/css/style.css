@@ -169,7 +169,7 @@ a:hover {
 }
 
 #icon {
-  background-color: #7c161b;
+  background-color: white;
   border: solid 2px white;
   width: 12.5rem;
   margin-right: 10px;
@@ -246,15 +246,17 @@ header {
 }
 
 #textoNoticia1 {
+  font-family: 'Trebuchet MS', sans-serif;
   height: fit-content;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 30px;
   padding-left: 10px;
   background-color: rgba(0, 0, 0, 0.5);
-  text-decoration-line: underline;
-
   color: rgb(247, 247, 247);
   font-weight: 900;
-  border-radius: 0px 0px 10px 10px
+  border-radius: 0px 0px 10px 10px;
+  gap: 10px;
 }
 
 .listadanav {
@@ -273,21 +275,27 @@ header {
 
 .noticiasSecaoDois {
   width: 1200px;
-  height: 427px;
+  height: fit-content;
   display: flex;
+  align-items: center;
   flex-direction: row;
   gap: 40px;
-
   background-color: #075440;
   padding: 10px 20px;
   border-radius: 10px;
+
 }
 
 #noticiasSecaoDoisImagem {
   width: 450px;
   height: 350px;
   border-radius: 10px;
+}
 
+
+#noticiaManchete {
+  color: white;
+  font-weight: 900;
 
 }
 
@@ -297,12 +305,14 @@ header {
   gap: 10px;
   margin-top: 10px;
   color: white;
+  font-weight: 400;
 }
-
 
 #noticiasSecaoDoistextos a {
+  font-weight: 200;
   color: white;
 }
+
 
 
 /*  /////////////////////////////////  */
