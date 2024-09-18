@@ -131,6 +131,29 @@ a:hover {
   height: 250px;
   margin-left: 10px;
 }
+
+#textoENoticiaSecao {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#textoAbaixoNoticiaUm {
+  background-color: #f2f2f2;
+  text-align: left;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#textoAbaixoNoticiaUm a div {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  text-decoration: underline;
+}
 .secao {
   width: 1200px;
   height: 427px;
