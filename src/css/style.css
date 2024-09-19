@@ -29,8 +29,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #075440;
 
-  border-radius: 10px;
-
   border: 1px solid rgba(64, 190, 25, 0);
 }
 
@@ -190,7 +188,7 @@ a:hover {
 
 .navelogo {
   display: flex;
-  max-width: 1200px;
+  width: 1200px;
   flex-direction: row;
   height: 100px;
   background-color: white;
