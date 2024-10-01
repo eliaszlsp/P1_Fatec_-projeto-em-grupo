@@ -5,6 +5,7 @@
   --color-neutral-10: #171717;
   --color-neutral-30: #a8a29e;
   --color-neutral-40: #f5f5f5;
+  --color-footer_header: #2a5d4d;
 }
 
 * {
@@ -38,11 +39,12 @@ body {
   flex-direction: column;
   max-width: 100vw;
   height: max-content;
+  background: linear-gradient(270deg, #2a5d4d, #3a6e5d, #2a5d4d);
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
@@ -191,10 +193,8 @@ a:hover {
   width: 1200px;
   flex-direction: row;
   height: 100px;
-  background-color: white;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 1px black;
 }
 
 main {
@@ -212,6 +212,7 @@ header {
   flex-direction: row;
   justify-content: center;
   width: 100vw;
+  background-color: var(--color-footer_header);
 }
 
 #noticiaUm {
@@ -369,7 +370,7 @@ footer {
   text-decoration: none;
 }
 #footer_content {
-  background-color: #2a5d4d;
+  background-color: var(--color-footer_header);
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -509,7 +510,28 @@ footer {
   .secao {
     width: 100%;
     height: 300px;
-    background-color: #075440;
+  }
+
+  #noticiaUm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #noticiaUm div:nth-child(2) {
+    height: 100%;
+  }
+
+  #textoNoticia1 {
+    font-size: 12px;
+  }
+  #icon {
+    width: 100%;
+    height: 60px;
+  }
+  #icon img {
+    width: 100%;
+    height: 100%;
   }
 
   .navelogo {
@@ -542,6 +564,39 @@ footer {
     outline: none;
     border: none;
   }
+  .services-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #075440;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .service {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 100%;
+    margin: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .service h2 {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .service p {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    text-align: justify;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1280px) {
@@ -557,7 +612,7 @@ footer {
   .secao {
     width: 100%;
     height: 300px;
-    background-color: #075440;
+    background-color: #7c161b;
   }
 
   .navelogo {
@@ -565,7 +620,6 @@ footer {
     width: 100%;
     flex-direction: row;
     height: 100px;
-    background-color: white;
     align-items: center;
     border-bottom: solid 1px black;
   }
@@ -598,5 +652,61 @@ footer {
   button {
     outline: none;
     border: none;
+  }
+
+  .services-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #075440;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .service {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 50%;
+    margin: 10px;
+    max-width: 45%;
+    box-sizing: border-box;
+  }
+  .service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .service h2 {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .service p {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    text-align: justify;
+  }
+
+  #noticiaUm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #noticiaUm div:nth-child(2) {
+    height: 100%;
+  }
+
+  #textoNoticia1 {
+    font-size: 12px;
+  }
+  #icon {
+    width: 100%;
+    height: 60px;
+  }
+  #icon img {
+    width: 100%;
+    height: 100%;
   }
 }
